@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/uiuStudentRecordSystem-master.iml" filepath="$PROJECT_DIR$/uiuStudentRecordSystem-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uiuStudentRecordSystem.iml" filepath="$PROJECT_DIR$/uiuStudentRecordSystem.iml" />
     </modules>
   </component>
 </project>
