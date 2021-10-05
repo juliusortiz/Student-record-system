@@ -10,7 +10,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 
-INSERT INTO `admin` VALUES (1,'Munir','Hasan','a','1234'),(2,'Tanjina','Helaly','h','1234');
+INSERT INTO `admin` VALUES (1,'Juan','Dela Cruz','admin','1234');
 
 
 CREATE TABLE `course` (
