@@ -18,7 +18,7 @@ public class MainLogin extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("MainLogin.fxml"));
-        primaryStage.setTitle("UIU Student Record System");
+        primaryStage.setTitle("Group 2 System");
         primaryStage.setScene(new Scene(root, 650, 400));
         primaryStage.show();
     }
