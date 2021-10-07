@@ -9,6 +9,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -17,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminCourse">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="admin.AdminCourse">
     <children>
         <BorderPane layoutX="464.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
@@ -50,7 +52,12 @@
                     <items>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                             <children>
-                                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseAddNewButtonClick" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #0B9CE3; -fx-text-fill: white;" text="AddNew" AnchorPane.leftAnchor="14.0" />
+                        <ImageView fitHeight="588.0" fitWidth="824.0" layoutX="39.0" layoutY="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../image/login-bg.jpg" />
+                           </image>
+                        </ImageView>
+                                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseAddNewButtonClick" prefHeight="19.0" prefWidth="80.0" style="-fx-background-color: #0B9CE3; -fx-text-fill: white;" text="Add Course" AnchorPane.leftAnchor="14.0" />
                                 <Button layoutX="134.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseEditButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="Edit" textFill="WHITE" />
                                 <Button alignment="CENTER" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseDeleteButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #FF3F3C; -fx-text-fill: white;" text="Delete" />
                                 <Text layoutX="16.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Details:" AnchorPane.bottomAnchor="504.482421875" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="214.33203125" AnchorPane.topAnchor="59.576171875">
@@ -97,7 +104,7 @@
                                         <TextField fx:id="courseTFSec" disable="true" promptText="e.g. SA,B,NA" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                     </children>
                                 </GridPane>
-                                <Text layoutX="16.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Informatin" AnchorPane.bottomAnchor="444.7333984375" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="197.095703125" AnchorPane.topAnchor="120.6552734375">
+                                <Text layoutX="16.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Information" AnchorPane.bottomAnchor="444.7333984375" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="197.095703125" AnchorPane.topAnchor="120.6552734375">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -113,7 +120,12 @@
                                 <Button layoutX="721.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseSearchButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="Search" textFill="WHITE" AnchorPane.rightAnchor="23.0" />
                                 <Button layoutX="46.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="View" textFill="WHITE" AnchorPane.leftAnchor="46.0" />
                                 <Button layoutX="146.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseRefreshButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="Refresh" textFill="WHITE" AnchorPane.leftAnchor="146.0" />
-                                <TableView fx:id="adminCourseTableView" layoutX="2.0" layoutY="55.0" prefHeight="533.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+                        <ImageView fitHeight="613.0" fitWidth="871.0" layoutX="2.0" layoutY="-1.0">
+                           <image>
+                              <Image url="@../image/login-bg.jpg" />
+                           </image>
+                        </ImageView>
+                                <TableView fx:id="adminCourseTableView" layoutX="-4.0" layoutY="55.0" prefHeight="533.0" prefWidth="828.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
                                     <columns>
                                         <TableColumn fx:id="adminCourseTableNo" prefWidth="32.0" text="No." />
                                         <TableColumn fx:id="adminCourseTableCode" prefWidth="107.0" text="Course Code" />

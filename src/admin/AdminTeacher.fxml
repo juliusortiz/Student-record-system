@@ -9,6 +9,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -17,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminTeacherController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="admin.AdminTeacherController">
    <children>
       <BorderPane layoutX="464.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -45,10 +47,15 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAdminTeacherAddNewButtonClick" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #0B9CE3; -fx-text-fill: white;" text="AddNew" AnchorPane.leftAnchor="14.0" />
+                        <ImageView fitHeight="589.0" fitWidth="1169.0" layoutX="-2.0">
+                           <image>
+                              <Image url="@../image/admin-bg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAdminTeacherAddNewButtonClick" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #0B9CE3; -fx-text-fill: white;" text="Add Teacher" AnchorPane.leftAnchor="14.0" />
                         <Button layoutX="134.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAdminTeacherEditButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="Edit" textFill="WHITE" />
                         <Button alignment="CENTER" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAdminTeacherDeleteButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #FF3F3C; -fx-text-fill: white;" text="Delete" />
-                        <Text layoutX="16.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Details:" AnchorPane.bottomAnchor="504.482421875" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="214.33203125" AnchorPane.topAnchor="59.576171875">
+                        <Text fill="WHITE" layoutX="16.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Details:" AnchorPane.bottomAnchor="504.482421875" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="214.33203125" AnchorPane.topAnchor="59.576171875">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -68,37 +75,37 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="adminTeacherTFFname" disable="true" GridPane.columnIndex="1" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" GridPane.rowIndex="1">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="adminTeacherTFLname" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID" GridPane.rowIndex="2">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="adminTeacherTFID" disable="true" prefWidth="214.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="3">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="adminTeacherTFEmail" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Department" GridPane.rowIndex="4">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" GridPane.rowIndex="4">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="adminTeacherTFDepartment" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Running Sec." GridPane.rowIndex="5">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Running Sec." GridPane.rowIndex="5">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
@@ -106,7 +113,7 @@
                               <TextField fx:id="adminTeacherTFSec" disable="true" promptText="Course Code:Section e.g. CSE211:SA" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                            </children>
                         </GridPane>
-                        <Text layoutX="16.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Information" AnchorPane.bottomAnchor="444.7333984375" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="197.095703125" AnchorPane.topAnchor="120.6552734375">
+                        <Text fill="WHITE" layoutX="16.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Information" AnchorPane.bottomAnchor="444.7333984375" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="197.095703125" AnchorPane.topAnchor="120.6552734375">
                            <font>
                               <Font size="23.0" />
                            </font>
@@ -118,6 +125,11 @@
                   </AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
+                        <ImageView fitHeight="590.0" fitWidth="1180.0" layoutY="-1.0">
+                           <image>
+                              <Image url="@../image/admin-bg.jpg" />
+                           </image>
+                        </ImageView>
                         <TextField fx:id="adminTeacherTFSearch" layoutX="548.0" layoutY="14.0" promptText="Teacher ID" AnchorPane.rightAnchor="127.0" />
                         <Button layoutX="721.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAdminTeacherSearchButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="Search" textFill="WHITE" AnchorPane.rightAnchor="23.0" />
                         <Button layoutX="46.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="View" textFill="WHITE" AnchorPane.leftAnchor="46.0" />
@@ -126,7 +138,7 @@
                            <columns>
                               <TableColumn fx:id="adminTeacherColumnNo" prefWidth="32.0" text="No." />
                               <TableColumn fx:id="adminTeacherColumnName" prefWidth="107.0" text="Name" />
-                              <TableColumn fx:id="adminTeacherColumnID" prefWidth="99.0" text="ID" />
+                              <TableColumn fx:id="adminTeacherColumnID" prefWidth="99.0" text="Teacher ID" />
                               <TableColumn fx:id="adminTeacherColumnEmail" prefWidth="171.0" text="Email" />
                               <TableColumn fx:id="adminTeacherColumnDepartment" prefWidth="76.0" text="Department" />
                               <TableColumn fx:id="adminTeacherColumnRunningCourse" prefWidth="329.0" text="Running Course" />

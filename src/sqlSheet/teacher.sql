@@ -42,9 +42,8 @@ CREATE TABLE `teacher` (
 LOCK TABLES `teacher` WRITE;
 /*!40000 ALTER TABLE `teacher` DISABLE KEYS */;
 INSERT INTO `teacher` VALUES
-(1,'Masudur','Rahman','t','1234','CSE','111023','CSE211:A,CSE111:C'),
-(2,'Adnan','Rahman','te','1234','CSE','111089','CSE112:C'),
-(3,'Mahbubur','Alam','m.alam@gmail.com','1234','EEE','111055','CSE111:D,CSE111:C');
+(1,'Ave','Jacutin','avejacutin@gmail.com','1234','CSE','111023','CSE211:A,CSE111:C'), --set ID: 111023
+(3,'Rodrigo','Duterte','rodrigoduterte@gmail.com','1234','EEE','111055','CSE111:D,CSE111:C'); ---setID: 111055
 /*!40000 ALTER TABLE `teacher` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -7,6 +7,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -15,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.Student">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="student.Student">
     <children>
         <BorderPane layoutX="464.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
@@ -41,6 +43,11 @@
             <center>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <children>
+                  <ImageView fitHeight="590.0" fitWidth="1180.0" layoutX="369.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../image/login-bg.jpg" />
+                     </image>
+                  </ImageView>
                         <TableView fx:id="resultHistoryTableView" layoutX="545.0" layoutY="49.0" prefHeight="541.0" prefWidth="635.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="545.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0">
                             <columns>
                                 <TableColumn fx:id="resultHistoryColumnCode" prefWidth="209.0" text="Course Code" />
@@ -66,61 +73,61 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFFname" disable="true" GridPane.columnIndex="1" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" GridPane.rowIndex="1">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" GridPane.rowIndex="1">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFLname" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" GridPane.rowIndex="2">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" GridPane.rowIndex="2">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFID" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="3">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="3">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFEmail" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" GridPane.rowIndex="5">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" GridPane.rowIndex="5">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFPhone" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Guardian F.Name" GridPane.rowIndex="6">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guardian F.Name" GridPane.rowIndex="6">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFGFname" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Guardian L.Name" GridPane.rowIndex="7">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guardian L.Name" GridPane.rowIndex="7">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFGLname" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                                <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" GridPane.rowIndex="8">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" GridPane.rowIndex="8">
                                     <font>
                                         <Font size="15.0" />
                                     </font>
                                 </Text>
                                 <TextField fx:id="studentTFAddress" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="4">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="4">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                         <TextField fx:id="studentTFPassword" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Picture" GridPane.rowIndex="9">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Picture" GridPane.rowIndex="9">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -128,12 +135,12 @@
                         <TextField fx:id="studentTFPicChooser" disable="true" promptText="Click for Choose" GridPane.columnIndex="1" GridPane.rowIndex="9" />
                             </children>
                         </GridPane>
-                        <Text fill="#0091ea" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Information: ">
+                        <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Information: ">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Text>
-                        <Text fill="#0091ea" layoutX="16.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Running Course :">
+                        <Text layoutX="16.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Running Course :">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -144,7 +151,7 @@
                      </font></Button>
                         <Button layoutX="74.0" layoutY="2.0" mnemonicParsing="false" onAction="#setStudentEditProfileClick" style="-fx-background-color: #00897b;" text="Edit Profile" textFill="WHITE" />
                         <Button layoutX="186.0" layoutY="3.0" mnemonicParsing="false" onAction="#setStudentViewProfileClick" style="-fx-background-color: #00897b;" text="View Profile" textFill="WHITE" />
-                        <Text fill="#0091ea" layoutX="545.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result History :">
+                        <Text layoutX="545.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result History :">
                             <font>
                                 <Font size="20.0" />
                             </font>

@@ -9,6 +9,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -17,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TeacherController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="teacher.TeacherController">
     <children>
         <BorderPane layoutX="464.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
@@ -43,7 +45,12 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <TableView fx:id="teacherTableView" layoutX="974.0" layoutY="65.0" prefHeight="525.0" prefWidth="712.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="468.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+                  <ImageView fitHeight="591.0" fitWidth="725.0" layoutX="457.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../image/login-bg.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="teacherTableView" layoutX="460.0" layoutY="65.0" prefHeight="525.0" prefWidth="722.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
                     <columns>
                       <TableColumn fx:id="teacherColumnID" prefWidth="138.0" text="Student ID" />
                       <TableColumn fx:id="teacherColumnName" prefWidth="163.0" text="Student Name" />
@@ -52,8 +59,13 @@
                         <TableColumn fx:id="teacherEmail" prefWidth="172.0" text="Email" />
                     </columns>
                   </TableView>
-                  <ComboBox fx:id="teacherTableSecChoose" layoutX="468.0" layoutY="14.0" prefWidth="150.0" promptText="Choose a Section" />
                   <Button fx:id="teacherLoadButton" layoutX="633.0" layoutY="14.0" mnemonicParsing="false" onAction="#setTeacherLoadClick" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #f57c00;" text="Load" textFill="WHITE" />
+                  <ComboBox fx:id="teacherTableSecChoose" layoutX="468.0" layoutY="14.0" prefWidth="150.0" promptText="Choose a Section" />
+                  <ImageView fitHeight="591.0" fitWidth="460.0" layoutX="101.0" layoutY="17.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="722.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../image/login-bg.jpg" />
+                     </image>
+                  </ImageView>
                   <Text fill="#673ab7" layoutX="21.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA Calculation :">
                      <font>
                         <Font size="20.0" />
@@ -73,37 +85,37 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                         <TextField fx:id="teacherTFAttendance" disable="true" GridPane.columnIndex="1" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Assignment" GridPane.rowIndex="1">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Assignment" GridPane.rowIndex="1">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                         <TextField fx:id="teacherTFAssignment" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Presentation" GridPane.rowIndex="2">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Presentation" GridPane.rowIndex="2">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                         <TextField fx:id="teacherTFPresentation" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Test" GridPane.rowIndex="3">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class Test" GridPane.rowIndex="3">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                         <TextField fx:id="teacherTFClassTest" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Midterm" GridPane.rowIndex="4">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Midterm" GridPane.rowIndex="4">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                         <TextField fx:id="teacherTFMidterm" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Text fill="#673ab7" strokeType="OUTSIDE" strokeWidth="0.0" text="Final" GridPane.rowIndex="5">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Final" GridPane.rowIndex="5">
                            <font>
                               <Font size="15.0" />
                            </font>
